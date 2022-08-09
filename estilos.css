@@ -1,0 +1,174 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;    
+    background: hsl(225, 100%, 98%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.contenedor{
+  width: 80%;
+  margin: 0 auto;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size:auto;
+  padding: 15rem;
+  height: auto;
+  }
+ 
+  .pedido{
+    width: 45%;
+    margin: 0 auto;
+    background: #FFF;
+    border-radius: 10px;
+    padding-bottom:  2rem;
+  }
+
+
+.contenedor_img{
+ background-image: url(images/illustration-hero.svg); 
+ height: 22rem;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+.contenido{
+  display: flex;
+  flex-direction: column;
+}
+
+.contenidoPrincipal{
+text-align: center;
+padding: 0 10rem;
+color: hsl(224, 23%, 55%);
+}
+
+.contenidoPrincipal h1{
+  color: #000;
+}
+
+.contenidoPedido{
+  display: flex;
+  justify-content: space-between;
+  background: hsl(225, 100%, 98%);
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.plan{
+  display: flex;  
+  align-items: center;
+}
+
+.plan svg{
+  margin-right: 2rem;
+}
+
+.datos_plan p{
+  margin: 0;
+  padding: 0;
+}
+
+.datos_plan span{
+  font-weight: 700;
+}
+
+.btnPayment{
+  width: 70%;
+  margin: 3rem auto;
+  background: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  color: #FFF;
+  -webkit-box-shadow: 0px 26px 13px -6px rgba(70,39,194,0.42);
+-moz-box-shadow: 0px 26px 13px -6px rgba(70,39,194,0.42);
+box-shadow: 0px 26px 13px -6px rgba(70,39,194,0.42);
+}
+
+.cancel{
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 1280px){
+  .pedido{
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px){
+  .contenedor{
+    width: 100%;
+    padding: 12rem;
+    }
+
+  .pedido{
+    width: 100%;
+  }
+
+  .contenidoPrincipal{
+    padding: 0 8rem;
+    }
+}
+
+@media (max-width: 540px){
+  .contenedor{
+    width: 100%;
+    padding: 4rem;
+    }
+
+  .pedido{
+    width: 100%;
+  }
+}
+
+@media (max-width: 411px){
+  .contenedor{
+    width: 100%;
+    padding: 2rem;
+    }
+
+  .pedido{
+    width: 100%;
+  }
+
+  .contenidoPrincipal{
+    padding: 0 2rem;
+    }
+}
+
+@media (max-width: 375px){
+  .contenedor{
+    width: 100%;
+    padding: 1rem;
+    }
+
+  .pedido{
+    width: 100%;
+  }
+
+  .contenidoPrincipal{
+    padding: 0 2rem;
+    }
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
